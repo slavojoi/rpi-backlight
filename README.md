@@ -1,6 +1,6 @@
 # rpi-backlight
 
-> A Python module for controlling power and brightness of the official Raspberry Pi 7" touch display.
+> A Python module for controlling power and brightness of the Waveshare DSI LCD touch displays.
 
 [![PyPI](https://img.shields.io/pypi/v/rpi-backlight)](https://pypi.org/project/rpi-backlight/)
 ![Python Version](https://img.shields.io/pypi/pyversions/rpi-backlight)
