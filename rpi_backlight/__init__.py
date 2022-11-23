@@ -79,7 +79,7 @@ class Backlight:
         self._fade_duration = 0.0  # in seconds
 
         if self._board_type in (BoardType.RASPBERRY_PI, BoardType.MICROSOFT_SURFACE_RT):
-            self._max_brightness = self._get_value("max_brightness")  # 255
+            self._max_brightness = self._get_value("brightness")  # 255
         elif (
             self._board_type == BoardType.TINKER_BOARD
             or self._board_type == BoardType.TINKER_BOARD_2
@@ -168,7 +168,7 @@ class Backlight:
         :type: float
         """
         if self._board_type in (BoardType.RASPBERRY_PI, BoardType.MICROSOFT_SURFACE_RT):
-            return self._normalize_brightness(self._get_value("actual_brightness"))
+            return self._normalize_brightness(self._get_value("brightness"))
         elif (
             self._board_type == BoardType.TINKER_BOARD
             or self._board_type == BoardType.TINKER_BOARD_2
